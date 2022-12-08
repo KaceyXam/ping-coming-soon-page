@@ -1,0 +1,39 @@
+.App {
+	padding-top: 3em;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	gap: 1.5rem;
+	max-width: 700px;
+	margin-inline: auto;
+}
+
+.notifyform {
+	display: grid;
+	grid-template-columns: 65% 35%;
+	gap: 1rem;
+	width: 100%;
+}
+
+.notifyform * {
+	padding: 1rem 1.5rem;
+	border-radius: 999vmax;
+}
+
+.notifyform button {
+	border: none;
+	background-color: var(--blue);
+	color: white;
+	font-weight: 600;
+}
+
+.notifyform input {
+	border: solid 2px lightgray;
+}
+
+.notifyform input::placeholder {
+	color: lightgray;
+}
