@@ -11,6 +11,16 @@
 	margin-inline: auto;
 }
 
+.title {
+	font-weight: 300;
+	color: var(--gray);
+}
+
+.bold {
+	font-weight: 700;
+	color: black;
+}
+
 .notifyform {
 	display: grid;
 	grid-template-columns: 65% 35%;
@@ -28,6 +38,13 @@
 	background-color: var(--blue);
 	color: white;
 	font-weight: 600;
+	box-shadow: 0 10px 15px var(--pale-blue);
+	transition: filter 75ms ease-in-out;
+	cursor: pointer;
+}
+
+.notifyform button:hover {
+	filter: brightness(115%);
 }
 
 .notifyform input {
@@ -36,4 +53,21 @@
 
 .notifyform input::placeholder {
 	color: lightgray;
+}
+
+.sociallinks {
+	display: flex;
+	gap: 0.75em;
+}
+
+.copyright {
+	font-size: 0.6rem;
+	color: var(--gray);
+}
+
+@media (max-width: 700px) {
+	.notifyform {
+		grid-template-columns: 1fr;
+		padding-inline: 5%;
+	}
 }
